@@ -23,9 +23,16 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
 
+      # Validate lockfile for back
+      - name: Check lockfile (back)
+        working-directory: ./back
+        run: |
+          npm install --package-lock-only
+          git diff --exit-code package-lock.json
+
       - name: Install dependencies (back)
         working-directory: ./back
-        run: npm ci
+        run: npm i
 
       - name: Build (back)
         working-directory: ./back
@@ -35,9 +42,16 @@ jobs:
         working-directory: ./back
         run: npm test
 
+      # Validate lockfile for front
+      - name: Check lockfile (front)
+        working-directory: ./front
+        run: |
+          npm install --package-lock-only
+          git diff --exit-code package-lock.json
+
       - name: Install dependencies (front)
         working-directory: ./front
-        run: npm ci
+        run: npm i
         continue-on-error: true
 
       - name: Build (front)

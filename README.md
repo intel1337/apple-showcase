@@ -1,6 +1,8 @@
 # Apple Store Clone
 
 Un clone moderne d'une boutique Apple avec authentification, panier d'achat et paiement Stripe.
+![ScreenRecording2025-05-21at9 38 33AM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/2b28ad8d-e211-4fb4-92e3-b7381eed38ba)
+
 
 ## 🚀 Stack Technique
 

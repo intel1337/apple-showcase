@@ -21,22 +21,23 @@ Un clone moderne d'une boutique Apple avec authentification, panier d'achat et p
 ## 📋 Prérequis
 
 - Node.js (v18 ou supérieur)
-- Docker et Docker Compose
+- Docker
 - npm ou yarn
 - Un compte Stripe (pour les paiements)
+
 
 ## 🛠 Installation
 
 1. **Cloner le repository**
 ```bash
-git clone [URL_DU_REPO]
-cd [NOM_DU_PROJET]
+git clone https://github.com/intel1337/apple-showcase/
+cd apple-showcase
 ```
 
 2. **Configurer la base de données**
 ```bash
 # Démarrer le container MySQL
-docker-compose up -d
+docker run --name bdd -p 3306:3306 -e MARIADB_ROOT_PASSWORD=root -e MARIADB_DATABASE=mini_shop mariadb
 ```
 
 3. **Installer les dépendances Backend**
@@ -55,12 +56,23 @@ npm install
 
 Créez un fichier `.env` dans le dossier `back` :
 ```env
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=root
-DB_NAME=apple_store
-JWT_SECRET=votre_secret_jwt
-STRIPE_SECRET_KEY=votre_cle_stripe
+JWT_SECRET=votre_secret_jwt 
+```
+
+6. **Configurer le Projet**
+```bash
+cd back
+cd auth
+# Ouvrez auth.js et modifiez votre clé api Si ENV marche pas
+```
+
+7. **Config la db**
+```js
+const HOST = 0.0.0.0
+host: HOST,
+        user: "root",
+        password: "root",
+        database: "shop"
 ```
 
 ## 🚀 Lancer le projet
@@ -68,7 +80,7 @@ STRIPE_SECRET_KEY=votre_cle_stripe
 1. **Démarrer le backend**
 ```bash
 cd back
-npm run dev
+npm run start
 ```
 
 2. **Démarrer le frontend**
@@ -138,7 +150,7 @@ services:
     image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: apple_store
+      MYSQL_DATABASE: shop
     ports:
       - "3306:3306"
     volumes:
@@ -170,7 +182,7 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 👥 Auteurs
 
-- Votre Nom - Développeur Principal
+- intel1337
 
 ## 🙏 Remerciements
 

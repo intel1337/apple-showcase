@@ -19,25 +19,27 @@ jobs:
     - name: Install Docker Compose
       run: |
         sudo apt-get update
-        sudo apt-get install -y docker-compose-plugin
-        docker compose version
+        sudo apt-get install -y docker.io
+        sudo curl -L "https://github.com/docker/compose/releases/download/v2.24.6/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+        sudo chmod +x /usr/local/bin/docker-compose
+        docker-compose --version
 
     - name: Build and start containers
       run: |
-        docker compose up -d --build
+        docker-compose up -d --build
 
     - name: Wait for services to be ready
       run: |
         sleep 10  # Give time for MariaDB to initialize
-        docker compose ps
+        docker-compose ps
 
     - name: Run tests
       run: |
-        docker compose exec -T app npm test
+        docker-compose exec -T app npm test
 
     - name: Stop containers
       if: always()
-      run: docker compose down
+      run: docker-compose down
 
     - name: Build and push Docker image
       if: github.event_name == 'push' && github.ref == 'refs/heads/master'

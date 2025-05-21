@@ -38,9 +38,9 @@ jobs:
       - name: Install dependencies (front)
         working-directory: ./front
         run: npm ci
-        continue-on-error: true # Si le dossier front n'existe pas, ça n'arrête pas tout
+        continue-on-error: true
 
       - name: Build (front)
         working-directory: ./front
         run: npm run build --if-present
-        continue-on-error: true
+        continue-on-error: true 

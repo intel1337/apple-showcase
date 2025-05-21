@@ -1,0 +1,73 @@
+[
+    {
+      "name": "iPhone 15 Pro",
+      "description": "The most powerful iPhone ever with a titanium design, A17 Pro chip, and advanced camera system.",
+      "price": 999.00,
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1692845702708",
+      "product_url": "https://www.apple.com/iphone-15-pro/"
+    },
+    {
+      "name": "MacBook Pro 14\"",
+      "description": "Supercharged by M3 Pro or M3 Max, MacBook Pro takes its power and speed further than ever.",
+      "price": 1999.00,
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-spacegray-select-202301?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1671304673202",
+      "product_url": "https://www.apple.com/macbook-pro/"
+    },
+    {
+      "name": "Apple Watch Series 9",
+      "description": "The most advanced Apple Watch ever with a powerful new chip and innovative new features.",
+      "price": 399.00,
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-ultra2-202309_GEO_FR?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1693501316441",
+      "product_url": "https://www.apple.com/apple-watch-series-9/"
+    },
+    {
+      "name": "iPad Pro",
+      "description": "Supercharged by M2, iPad Pro is the ultimate iPad experience with advanced displays and cameras.",
+      "price": 799.00,
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-model-select-gallery-2-202212?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1670887558501",
+      "product_url": "https://www.apple.com/ipad-pro/"
+    },
+    {
+      "name": "AirPods Pro",
+      "description": "Active Noise Cancellation, Transparency mode, and Spatial Audio with dynamic head tracking.",
+      "price": 249.00,
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQD83?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1660803972361",
+      "product_url": "https://www.apple.com/airpods-pro/"
+    },
+    {
+      "name": "Magic Mouse",
+      "description": "Wireless and rechargeable, with an optimized foot design that lets it glide smoothly across your desk.",
+      "price": 79.00,
+      "image": "https://esimport.fr/2295-large_default/apple-magic-mouse.jpg",
+      "product_url": "https://www.apple.com/shop/product/MXK53AM/A/magic-mouse-usb%E2%80%91c-white-multi-touch-surface"
+    },
+    {
+      "name": "Magic Keyboard",
+      "description": "Delivers a remarkably comfortable and precise typing experience for Mac and Apple Vision Pro.",
+      "price": 99.00,
+      "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MXCL3F?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=ZGE3U0pyTE12SnBiSlFmV2paQ1NVekxJNzJtbW9WRzBUckZ4SDR0aldyMFY0ZGtxRm5nMGhUUUYyQ1NONFVVUldxQjVIMkNDNkllSEQrdk8rbTlaZXc",
+      "product_url": "https://www.apple.com/shop/product/MXCL3LL/A/magic-keyboard-usb-c-us-english"
+    },
+    {
+      "name": "MagSafe Battery Pack",
+      "description": "Compact, intuitive design makes on-the-go charging easy. The perfectly aligned magnets keep it attached to your iPhone.",
+      "price": 99.00,
+      "image": "https://files.refurbed.com/ii/apple-magsafe-battery-pack-1664359553.jpg?t=fitdesign&h=600&w=800",
+      "product_url": "https://support.apple.com/en-us/111857"
+    },
+    {
+      "name": "iMac 2025",
+      "description": "The world's best all-in-one desktop. Supercharged by M4 chip. Built for Apple Intelligence. With a 24-inch 4.5K display.",
+      "price": 1699.00,
+      "image": "https://www.atelierinformatiquenantes.fr/wp-content/uploads/2024/12/imac_24_pouces_atelier_informatique-1.jpg",
+      "product_url": "https://www.apple.com/imac/"
+    },
+    {
+      "name": "Apple Vision Pro",
+      "description": "Apple Vision Pro is Apple's first spatial computer. It seamlessly blends digital content with your physical space using revolutionary technology.",
+      "price": 3499.00,
+      "image": "https://www.apple.com/newsroom/images/media/introducing-apple-vision-pro/Apple-WWDC23-Vision-Pro-glass-230605_big.jpg.large.jpg",
+      "product_url": "https://www.apple.com/apple-vision-pro/"
+    }
+  ]
+  

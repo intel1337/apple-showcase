@@ -1,6 +1,6 @@
 import Stripe from 'stripe';
 
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'YOUR API KEY HERE check stripe dev');
+export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'your api key here');
 // ENV MARCHE PAS, LAISSER CLE EN DUR SUR REPO PRIVE
 export async function createProduct(productData) {
     try {

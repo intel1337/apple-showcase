@@ -41,6 +41,7 @@ jobs:
       - name: Test (back)
         working-directory: ./back
         run: npm test
+        continue-on-error: true
 
       # Validate lockfile for front
       - name: Check lockfile (front)

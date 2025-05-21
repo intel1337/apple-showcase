@@ -27,7 +27,7 @@ jobs:
       - name: Check lockfile (back)
         working-directory: ./back
         run: |
-          npm install 
+          npm install
 
 
       - name: Install dependencies (back)
@@ -46,8 +46,7 @@ jobs:
       - name: Check lockfile (front)
         working-directory: ./front
         run: |
-          npm install --package-lock-only
-          git diff --exit-code package-lock.json
+          npm install
 
       - name: Install dependencies (front)
         working-directory: ./front

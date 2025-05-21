@@ -143,7 +143,7 @@ node seeder/seeder.js
 
 ## 🐳 Docker
 
-Le projet utilise Docker pour la base de données MySQL. La configuration est dans le fichier `docker-compose.yml`  si vous utilisez docker-compose, sinon voir [](🛠 Installation):
+Le projet utilise Docker pour la base de données MySQL. La configuration est dans le fichier `docker-compose.yml`  si vous utilisez docker-compose, sinon voir [Ci-Dessus](##🛠 Installation):
 
 ```yaml
 version: '3.8'

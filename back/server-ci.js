@@ -313,7 +313,7 @@ app.post("/seed-product", async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
+const server = app.listen(3000, () => {
     console.log("Server is running on port 3000");
     if(!database){
         console.log("Database is not connected");
@@ -323,10 +323,11 @@ app.listen(3000, () => {
     else{
         console.log("Database is connected");
         setTimeout(() => {
-        server.close(() => {
-          console.log('Serveur arrêté automatiquement après 10 secondes.');
-          process.exit(0); 
-    });
+            server.close(() => {
+                console.log('Serveur arrêté automatiquement après 5 secondes.');
+                process.exit(0); 
+            });
+        }, 5000);
     }
 });
 
